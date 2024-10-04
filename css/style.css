@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+.error img {
+  display: none;
+  width: 100%;
+  margin-top: 60px;
+  border-radius: 64px;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  border-radius: 20px;
+  margin: 100px auto 0;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px 25px;
+  height: 60px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  margin-right: 16px;
+  background-color: #ebfffc;
+  color: #555;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.search input:focus {
+  outline: #177ce8 1px solid;
+}
+
+.search button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.search button:hover {
+  background-color: #ebfffc;
+}
+
+.search button img {
+  width: 25px;
+  height: 30px;
+}
+
+.search .tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltip__text {
+  visibility: hidden;
+  width: 100px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 16px;
+  padding: 4px;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 90%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip__text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*! Start Weather */
+.weather {
+  display: none;
+}
+.weather_icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather .temp,
+.weather .city {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.weather .details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 8px;
+  color: white;
+}
+
+.weather .details .col-1,
+.weather .details .col-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.weather .details .col-1 h1,
+.weather .details .col-2 h1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-block: 4px;
+}
+.weather .details .col-1 img,
+.weather .details .col-2 img {
+  width: 50px;
+}
+/*! End Weather */
